@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "注解1": "插件版本",
+  "version": "1.0",
+  "注解2": "插件名字",
+  "name": "notion table of contents plugin",
+  "注解3": "关于插件的描述",
+  "description": "notino网页版的侧目录",
+  "icons": {
+    "128": "images/notion.png"
+  },
+  "permissions": ["tabs", "https://notion.so/*"],
+  "content_scripts": [
+    {
+      "js": ["js/notion_table_of_contents.js"],
+      "matches": ["https://www.notion.so/*"]
+    }
+  ]
+}
